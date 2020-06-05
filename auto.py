@@ -15,7 +15,7 @@ with open('potential-contacts.txt', 'r') as f:
     pattern3 = r"\d{3}\.\d{3}\.\d{4}"
 
     # no area code, add 206
-    pattern4 = r"\d{3}-\d{4}"
+    pattern4 = r"\s\d{3}-\d{4}"
 
     phone1 = re.findall(pattern1,contents)
     phone2 = re.findall(pattern2,contents)
